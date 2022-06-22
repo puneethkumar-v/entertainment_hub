@@ -1,0 +1,18 @@
+.search { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 2.5vw;
+    padding-left: 0vw;
+    overflow: visible;
+    flex-direction: column;
+    padding-top: 12vw;
+    background-color: #141414;
+}
+
+.search-centered { 
+    width: 80%;
+}

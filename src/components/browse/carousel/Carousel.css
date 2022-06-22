@@ -1,0 +1,98 @@
+.carousel__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 2vw;
+  z-index: 0;
+}
+
+.carousel__container > p {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5vw 0;
+}
+
+.carousel-container {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+} 
+ 
+.carousel-container.hover-container {
+  width: 100%;
+} 
+
+.carousel-container.hover-container .hover-item{
+  transform: translateX(-40%);
+}
+
+.hover-item:hover ~ .hover-item {
+  transform: translateX(40%);
+}
+
+.hover-item:hover {
+  cursor: pointer;
+  transform: scale(1.8) !important;
+  z-index: 0;
+}
+
+.carousel-item {
+  width: 100%;
+  min-height: 10vw;
+  display: flex;
+  align-items: center;
+  margin: 0.2rem;
+  transform-origin: scale(1) translateX(0);
+  flex: 0 0 19.7%;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+} 
+
+.react-multi-carousel-list {
+  overflow: unset !important;
+}
+
+.carousel__container:hover {
+  z-index: 2;
+}
+
+@media (max-width: 1060px) {
+  .carousel-item {
+    min-height: 13.5vw;
+  }
+
+  .item-more-infos-icon > svg {
+    width: 5vw;
+    max-height: 1.5vw;  
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-item {
+    min-height: 18vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    max-width: 10rem;
+  }
+
+  .item-play,
+.item-actions {
+ padding: 1w;
+}
+
+.item-more-infos-icon > svg {
+max-height: 4vw;
+width: 15vw;
+}
+}
+
+@media (max-width: 450px) {
+  .carousel-item {
+    min-height: 24vw;
+  }
+} 

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
+
+.expanded-informations {
+  width: 100%;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.expanded-layer {
+  padding-left: 3vw;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9807320926966292) 35%,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(0, 0, 0, 0.8992714185393258) 39%,
+    rgba(0, 0, 0, 0.741968047752809) 41%,
+    rgba(0, 0, 0, 0.343091643258427) 45%
+  );
+}
+
+.expanded-informations.close {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.expanded-informations.open {
+  max-height: 1200px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.expanded-date {
+  margin-bottom: 3vw;
+}
+
+.close-item-active {
+  border: none;
+  font-family: "Baloo Paaji 2", cursive;
+  outline: transparent;
+  line-height: 0;
+  color: #fff;
+  font-size: 3vw;
+  height: 4vw;
+  width: 4vw;
+  cursor: pointer;
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.item-active-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expanded-top {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.expanded-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.expanded-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vw;
+}
+
+.expanded-title {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 3.5vw;
+  margin-bottom: 0.8vw;
+  width: 85%;
+}
+
+.expanded-date {
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+.expansion-overview,
+.expansion-genre {
+  font-weight: 300;
+  padding: 0;
+  color: gray;
+}
+
+.expansion-overview {
+  font-size: 1.27vw;
+}
+
+.expansion-genre {
+  font-size: 1.15vw;
+}
+
+.expansion-btns {
+  display: flex;
+  align-items: center;
+}
+
+.expansion-btn-watch > #play {
+  height: 2.2vw;
+  width: 2.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expansion-btn-watch,
+.expansion-btn-mylist {
+  font-size: 1vw;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  outline: none;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 2vw 0;
+  color: #fff;
+}
+
+.expansion-btn-mylist {
+  background-color: transparent;
+  border: 0.1vw solid white;
+  padding: 0.6vw 2vw;
+  box-sizing: border-box;
+}
+
+.expansion-btn-watch {
+  background-color: #ffc107;
+  color: black;
+  margin-right: 1vw;
+  padding: 0.2vw 2.5vw 0.2vw 1vw;
+  box-sizing: border-box;
+}
+
+.expansion-btn-watch:hover,
+.expansion-btn-mylist:hover {
+  transform: scale(1.025);
+}
+
+.expansion-thumbs {
+  border-radius: 50%;
+  border: 1.5px solid gray;
+  margin-left: 1vw;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 2.4vw;
+  height: 2.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expansion-thumbs:hover {
+  border: 1.5px solid white;
+  transform: scale(1.1);
+}
+
+.expansion-thumbs svg {
+  width: 1.5vw;
+}
+
+.expanded-bottom > * {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  padding: 1vw 0;
+  margin: 0 1.4vw;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1vw;
+  border-bottom: 0.5vw solid transparent;
+  transition: border 0.5s ease;
+}
